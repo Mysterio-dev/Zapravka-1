@@ -1,0 +1,144 @@
+.swiper-main {
+
+
+    .swiper-slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide__inner {
+        position: relative;
+        padding: 50px 0;
+    }
+
+    .slide__desc {
+        max-width: 400px;
+        width: 100%;
+        z-index: 99;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+
+    }
+
+
+    .swiper-slide-active .title {
+        animation: fadeInUpSD 1.2s both 1.2s
+    }
+
+    .swiper-slide-active #figure-1 {
+        animation: fadeInUpSD 1s both 1s
+    }
+
+    .swiper-slide-active #figure-2 {
+        animation: fadeInUpSD 1.5s both 1.5s
+    }
+
+    .swiper-slide-active #figure-3 {
+        animation: fadeInUpSD 1.8s both 1.8s
+    }
+
+    .swiper-slide-active #figure-4 {
+        animation: fadeInUpSD 2s both 2s
+    }
+
+
+
+
+
+    .title {
+        color: #FFFFFF;
+        line-height: 58px;
+        text-shadow: 6px 5px 5px #000000;
+    }
+
+    .layer {
+        content: '';
+        background: url('../assets/images/layer-01.png') no-repeat;
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+        background-position: left;
+
+    }
+
+
+    .swiper-button-prev {
+        left: 20px;
+    }
+
+    .swiper-button-next {
+        right: 20px;
+    }
+
+    .swiper-button-prev::after {
+        content: '';
+        background: url('../assets/svg/arrow-left.svg') no-repeat;
+        width: 23px;
+        height: 89px;
+        background-size: contain;
+    }
+
+    .swiper-button-next::after {
+        content: '';
+        background: url('../assets/svg/arrow-right.svg') no-repeat;
+        width: 23px;
+        height: 89px;
+        background-size: contain;
+    }
+
+
+
+
+}
+
+#figure-1 {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+#figure-2 {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+}
+
+#figure-3 {
+    position: absolute;
+    top: 20px;
+    left: -40px;
+}
+
+#figure-4 {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+
+@keyframes fadeInUpSD {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -25%, 0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}

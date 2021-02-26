@@ -1,0 +1,22 @@
+@import './section/header';
+@import './сomponents/slide';
+@import './section/about';
+@import './base/typography';
+@import './objects/button';
+@import './utilities/margin';
+@import './section/features';
+@import './section/news';
+@import './section/slide';
+@import './section/contants';
+@import './config/text';
+@import './base/media';
+
+body {
+    font-family: 'Roboto', sans-serif!important;
+}
+
+
+
+.wow {
+	visibility: hidden;
+}
